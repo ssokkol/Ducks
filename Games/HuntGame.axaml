@@ -1,0 +1,34 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" Width="800" Height="450"
+        x:Class="ASFS.UI.Windows.Games.HuntGame"
+        CanResize="False"
+        ExtendClientAreaChromeHints="NoChrome"
+        Title="HuntGame">
+    <Grid>
+        <Image Name="CursorImage" Source="/res/icons/add.png" Height="40" Width="40" Stretch="UniformToFill"></Image>
+        <Canvas Name="GameCanvas" Background="LightSkyBlue">
+            <Button Classes="TransparentButton" Background="Transparent" Width="800" Height="450" Click="GameCanvas_PointerPressed"></Button>
+        
+            <Canvas Name="DuckCanvas" Height="450" Width="800"/>
+        
+            <TextBlock Name="ScoreTextBlock" Text="Score: 0" FontSize="24" Canvas.Left="10" Canvas.Top="10"/>
+            <TextBlock Name="MissedTextBlock" Text="Missed: 0" FontSize="24" Canvas.Left="10" Canvas.Top="40"/>
+            <TextBlock Name="RoundTextBlock" Text="Round: 1" FontSize="24" Canvas.Left="10" Canvas.Top="70"/>
+            <TextBlock Name="TimeTextBlock" Text="Time: 60" FontSize="24" Canvas.Left="10" Canvas.Top="100"/>
+        
+            <Image Name="DogLose" Source="/res/game/dog_lose.png" Width="140" Height="100" Stretch="UniformToFill" Canvas.Left="360" Canvas.Top="275" IsVisible="False" />
+            <Image Name="DogOne" Source="/res/game/dog_one_hand.png" Width="140" Height="100" Stretch="UniformToFill" Canvas.Left="360" Canvas.Top="275" IsVisible="False" />
+            <Image Name="DogTwo" Source="/res/game/dog_two_hands.png" Width="140" Height="100" Stretch="UniformToFill" Canvas.Left="360" Canvas.Top="275" IsVisible="False" />
+        
+            <Image Name="Grass" Source="/res/game/grass.png" Height="100" Width="800" Stretch="UniformToFill" Canvas.Left="0" Canvas.Top="350"/>
+        
+        </Canvas>
+        <Button Classes="TransparentButton" VerticalAlignment="Center" Margin="200 100" HorizontalAlignment="Center" Click="StartGame_Click" Name="StartGame">
+            <Image Source="/res/game/GameTitle.png"></Image>
+        </Button>
+        
+    </Grid>
+</Window>

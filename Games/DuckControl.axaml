@@ -1,0 +1,17 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="ASFS.UI.Windows.Games.DuckControl">
+    <Button Classes="TransparentButton" Width="100" Height="100" Click="Duck_Clicked">
+        <Grid>
+            <Image Name="DuckToRightTopFirst" Source="/res/game/DuckRightTop1.png" Stretch="UniformToFill"/> 
+            <Image Name="DuckToRightTopSecond" Source="/res/game/DuckRightTop2.png" IsVisible="False" Stretch="UniformToFill"/> 
+            <Image Name="DuckToRightTopThird" Source="/res/game/DuckRightTop3.png" IsVisible="False" Stretch="UniformToFill"/> 
+            <Image Name="DuckToLeftTopFirst" Source="/res/game/DuckLeftTop1.png" IsVisible="False" Stretch="UniformToFill"/> 
+            <Image Name="DuckToLeftTopSecond" Source="/res/game/DuckLeftTop2.png" IsVisible="False" Stretch="UniformToFill"/> 
+            <Image Name="DuckToLeftTopThird" Source="/res/game/DuckLeftTop3.png" IsVisible="False" Stretch="UniformToFill"/> 
+            
+            <Image Name="ShootedDuck" Source="/res/game/DuckShooted.png" IsVisible="False" Stretch="UniformToFill"></Image>
+            <Image Name="DeadDuck" Source="/res/game/DuckDead.png" IsVisible="False" Stretch="UniformToFill"></Image>
+        </Grid>
+    </Button>
+</UserControl>
